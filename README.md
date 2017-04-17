@@ -12,7 +12,9 @@ NOTE : If a older version of Pi is used, corresponding configuration might be ch
 
 B) Software configurations
 The USB sound card has to be set as default audio device. To do so, you need to modify two files with following contents.
+
 1 Use “lsusb” command to check if your USB sound card is mounted or not.
+
 2 Use command: "sudo nano /etc/asound.conf"  and put following content to the file:
  pcm.!default { 
 	type plug slave {
@@ -25,6 +27,7 @@ card 1
 }
 
 3 Use command nano .asoundrc and put the same content.
+
 4  Run alsamixer and check USB sound card as the default audio device. 
 
 NOTE : If you are using Raspian Jessie (version 1.0.28), you have to roll-back alsa-utils to an earlier version (1.0.25). You can read the instruction below. 
