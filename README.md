@@ -63,3 +63,6 @@ The newest version of Raspbian comes with a new version of alsa-utils (1.0.28), 
 6 Run “arecord -r44100 -c1 -f S16_LE -d5 test.wav” to test that your microphone is working. You should see a “test.wav” file in the current folder.
 
 7 Put earphone on. Run “aplay test.wav” to check that your recording is okay.
+
+By Vy , Do Xuan
+vydx91@gmail.com
